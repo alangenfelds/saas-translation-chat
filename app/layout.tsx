@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 import ClientProviders from "@/components/ClientProviders";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Multi-language chat",
@@ -20,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <ClientProviders>
-      <html lang="en">
-        <body className={inter.className}>
+      <html lang="en" suppressHydrationWarning={true}>
+        <body className="flex min-h-screen flex-col">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

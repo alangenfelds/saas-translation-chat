@@ -9,7 +9,6 @@ import CreateChatButton from "./CreateChatButton";
 
 const Header = async () => {
   const session = await getServerSession(authOptions);
-
   return (
     <header className="fixed top-0 z-50 w-full bg-white dark:bg-gray-900">
       <nav className="mx-auto flex max-w-7xl flex-col items-center bg-white p-5 pl-2 dark:bg-gray-900 sm:flex-row">
